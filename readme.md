@@ -1,1 +1,1 @@
-#shorts notes and concept 
+##shorts notes and concept
