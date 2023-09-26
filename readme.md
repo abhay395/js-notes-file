@@ -1,2 +1,1 @@
-## shorts notes and concept 
-# crd
+#shorts notes and concept 
