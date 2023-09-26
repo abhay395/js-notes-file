@@ -1,0 +1,1 @@
+## shorts notes and concept 
