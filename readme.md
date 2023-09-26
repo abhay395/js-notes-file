@@ -9,8 +9,8 @@ it's want a refrence of function and interval time whene it run
 how clear setinterval
 seen this
  ```
- intecalid= setInterval(butnfun,500)
-  clearInterval(intecalid)
+ intervelid= setInterval(butnfun,500)
+  clearInterval(intervelid)
  
  ```
  when we want to clear the interwla we use clearinterval methode its wants idname of setinterval 
