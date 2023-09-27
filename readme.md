@@ -14,3 +14,19 @@ seen this
  
  ```
  when we want to clear the interwla we use clearinterval methode its wants idname of setinterval 
+## async keye word or async methode
+when we want to do asyncrinate work in js we use async key word in function and then we use await key word to do work like this
+``
+ async createAccount({email,password,name}){
+        try {
+          const userAccount=await this.account.create(ID.unique(),email,password,name)
+          if(userAccount){
+            //call another method
+          }else{
+            return userAccount;
+          }
+        } catch (error) {
+            throw error;
+        }
+    }
+``
