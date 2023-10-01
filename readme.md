@@ -30,3 +30,20 @@ when we want to do asyncrinate work in js we use async key word in function and 
         }
     }
 ```
+## getBoundingClientRect() 
+is methode ka use kisi bhi partculer tage ya button ki position hight widht ka pata laga ne me kiya jata hai
+```
+const element = document.getElementById('myElement');
+
+// getBoundingClientRect() ka use karke element ke rectangular region ki information retrieve kare
+const rect = element.getBoundingClientRect();
+
+// Retrieve ki gayi information ka istemal karen
+console.log('Top:', rect.top);
+console.log('Left:', rect.left);
+console.log('Bottom:', rect.bottom);
+console.log('Right:', rect.right);
+console.log('Width:', rect.width);
+console.log('Height:', rect.height);
+```
+isme jo parameters melete hai vo px me hote hai
