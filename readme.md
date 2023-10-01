@@ -51,3 +51,21 @@ isme jo parameters melete hai vo px me hote hai
 load ka use jab hame kise button ya class ka page ke pure load hone ke baad add karna hota hai iska use kare ke hame page loder bana sakte hai
 
 or DOMContentLoaded ka use jab kiya tab kya jata hai jab hame kise button ka Html dom render hote hi add karn hota hai 
+
+# when you want remaing time to your fyture time you use this code
+```
+ const t = futureTime-today;// t is remaing time in ms 
+  // 1s = 1000ms 
+  // im=60s
+  // 1hr = 60min
+  //1d=24hr
+  const oneDay=24*60*60*1000;
+  const oneHours=60*60*1000;
+  const oneMinite=60*1000;
+  // caslculate all values
+  let Remday=Math.floor(t/oneDay);
+  let Remhours = Math.floor((t % oneDay)/oneHours);
+  let Remmin = Math.floor((t % oneHours)/oneMinite)
+  let Remsec = Math.floor((t % oneMinite)/1000)
+
+```
