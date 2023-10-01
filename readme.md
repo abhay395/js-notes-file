@@ -47,3 +47,7 @@ console.log('Width:', rect.width);
 console.log('Height:', rect.height);
 ```
 isme jo parameters melete hai vo px me hote hai
+## addEventListner('load',function(){}) ,addEventListner('DOMContentLoaded',function(){})
+load ka use jab hame kise button ya class ka page ke pure load hone ke baad add karna hota hai iska use kare ke hame page loder bana sakte hai
+
+or DOMContentLoaded ka use jab kiya tab kya jata hai jab hame kise button ka Html dom render hote hi add karn hota hai 
