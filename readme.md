@@ -69,3 +69,13 @@ or DOMContentLoaded ka use jab kiya tab kya jata hai jab hame kise button ka Htm
   let Remsec = Math.floor((t % oneMinite)/1000)
 
 ```
+# how to make and set attribue in html using js
+```
+ const element = document.createElement('article');
+        // add class
+        element.classList.add('grocery-item');
+        // add id
+        const attr = document.createAttribute('data-id');
+        attr.value = id ;
+        element.setAttributeNode(attr);
+```
