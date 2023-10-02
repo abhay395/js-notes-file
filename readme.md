@@ -98,7 +98,8 @@ use like this
 //getItem
 //removeItem
 // save as a string
-localStarage.setItme('orange',JSON.stringify['item','item2'])
+localStorage.setItme('orange',JSON.stringify['item','item2'])
 const orange = JSON.parse(localStorage.getItem('orange'))
+localStorage.removeItem('orange')
 
 ```
