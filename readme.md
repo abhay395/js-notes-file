@@ -79,3 +79,5 @@ or DOMContentLoaded ka use jab kiya tab kya jata hai jab hame kise button ka Htm
         attr.value = id ;
         element.setAttributeNode(attr);
 ```
+# note
+when we make a emlemnet using a createElement methode we can't accese those element outside this function but we can acces those element using outside of elements
