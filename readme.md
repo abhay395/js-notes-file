@@ -88,3 +88,17 @@ when we make a emlemnet using a createElement methode we can't accese those elem
 editElement = e.currentTarget.parentElement.previousElementSibling
 
 ```
+## LocalStorage 
+localStorage is api when we want set anything localStorage we  us localStorage.setItem() it's want only a name and refrence of element but it's save only string we it's into a string  and we want to get the value we use localStorage.getItem() 
+use like this 
+```
+// key points
+//localStorageApi
+//setItem
+//getItem
+//removeItem
+// save as a string
+localStarage.setItme('orange',JSON.stringify['item','item2'])
+const orange = JSON.parse(localStorage.getItem('orange'))
+
+```
