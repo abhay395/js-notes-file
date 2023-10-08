@@ -103,3 +103,33 @@ const orange = JSON.parse(localStorage.getItem('orange'))
 localStorage.removeItem('orange')
 
 ```
+## Note 
+when we want to acces those varible who not in the local scope we use this suntex
+```
+ const allCateagory =  ['all',...new Set(menu.map((item)=>item.category))]  
+ function createButton (){
+    const allbutton = allCateagory.map((category)=>{
+        return `<button class="filter-btn" data-id=${category} type="button" >${category}</button>`
+    })
+    buttonContainer.innerHTML=  allbutton.join('')
+    add()
+   
+ }
+ createButton()
+ function add(){
+    const buttons = document.querySelectorAll('.filter-btn')
+    console.log(buttons)
+    buttons.forEach((button)=>button.addEventListener('click',(e)=>{
+      const categary =  e.currentTarget.getAttribute('data-id')
+      filterMenu(categary)
+    }))
+ }
+ function filterMenu(categarytake){
+    if(categarytake==='all'){
+        displayMenu(menu) 
+        return
+    }
+    const newMenu = menu.filter((item)=>item.category===categarytake)
+    displayMenu(newMenu)
+ }
+```
